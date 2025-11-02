@@ -10,4 +10,15 @@ CREATE TABLE CUSTOMERS (
     JoinDate DATE DEFAULT CURRENT_DATE
 );
 
+CREATE TABLE ORDERS (
+    OrderID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID int references CUSTOMERS(CustomerID) NOT NULL,
+    OrderDate date,
+    ShippedDate date,
+    ShipAddress NVARCHAR(50),
+    ShipCity NVARCHAR(15),
+    ShipCountry NVARCHAR(15)
+);
+
 my collaborators adding information:
+
