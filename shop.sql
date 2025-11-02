@@ -10,6 +10,10 @@ CREATE TABLE CUSTOMERS (
     JoinDate DATE DEFAULT CURRENT_DATE
 );
 
+my collaborators adding information:
+
+NitzanKahila
+    
 CREATE TABLE ORDERS (
     OrderID INT AUTO_INCREMENT PRIMARY KEY,
     CustomerID int references CUSTOMERS(CustomerID) NOT NULL,
@@ -20,7 +24,21 @@ CREATE TABLE ORDERS (
     ShipCountry NVARCHAR(15)
 );
 
-my collaborators adding information:
+CREATE TABLE PRODUCTS (
+    ProductID INT AUTO_INCREMENT PRIMARY KEY,
+    ProductName VARCHAR(30) NOT NULL,
+    Category VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE ORDER_DETAILS (
+    OrderID INT references Order(OrderID) NOT NULL,
+    ProductID INT references PRODUCTS(ProductID) NOT NULL,
+    UnitPrice MONEY NOT NULL,
+    Quantity FLOAT NOT NULL
+    SubTotal MONEY NOT NULL,
+);
+
+    
 ari123
 CREATE Orders 2 (
     customer ID INT references CUSTOMERS (CustomerID) NOT NULL,
