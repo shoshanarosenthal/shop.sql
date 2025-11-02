@@ -22,3 +22,5 @@ CREATE TABLE ORDERS (
 
 my collaborators adding information:
 ari123
+create Orders 2 (
+    customer ID
