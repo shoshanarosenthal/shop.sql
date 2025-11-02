@@ -9,3 +9,5 @@ CREATE TABLE CUSTOMERS (
     City VARCHAR(50),
     JoinDate DATE DEFAULT CURRENT_DATE
 );
+
+my collaborators adding information:
