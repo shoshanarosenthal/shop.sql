@@ -24,7 +24,8 @@ my collaborators adding information:
 ari123
 CREATE Orders 2 (
     customer ID INT references CUSTOMERS (CustomerID) NOT NULL,
-    Product varchar (30)
-    Quantity int
-    Price int
-    Orderdate date)
+    Product varchar (30),
+    Quantity int,
+    Price int,
+    Orderdate date
+    );
